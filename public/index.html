@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Aurora AI – Smart Website Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Background blobs -->
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+
+    <!-- Top Navigation -->
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="nav-left">
+                <div class="logo-mark">A</div>
+                <div class="logo-text">
+                    <span class="logo-name">Aurora AI</span>
+                    <span class="logo-tagline">Smart Chatbot for Modern Websites</span>
+                </div>
+            </div>
+            <div class="nav-center">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#use-cases" class="nav-link">Use cases</a>
+                <a href="#demo" class="nav-link">Live demo</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="nav-pill" id="nav-theme-toggle">
+          <span>🌙 / ☀️</span>
+        </button>
+                <button class="nav-cta" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">
+          Try the bot →
+        </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home" class="hero">
+        <section class="hero-left">
+            <div class="hero-badge">New · AI-powered website assistant</div>
+            <h1 class="hero-title">
+                Turn visitors into customers with a
+                <span>beautiful smart chatbot.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Aurora AI sits on your website, answers questions instantly, explains your product, and collects leads — all with a clean, modern interface you control.
+            </p>
+            <div class="hero-actions">
+                <button class="hero-primary" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">
+          Launch live chatbot
+        </button>
+                <button class="hero-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+          Explore features
+        </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Instant support</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3×</span>
+                    <span class="stat-label">Better engagement</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Code for clients</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-right">
+            <div class="hero-panel">
+                <div class="hero-panel-header">
+                    <span class="hero-panel-title">Live conversation preview</span>
+                    <span class="hero-panel-status">
+            <span class="status-dot"></span> Real-time
+                    </span>
+                </div>
+                <div class="hero-panel-body">
+                    <div class="preview-message bot">
+                        <span class="label">Bot</span>
+                        <p>Hi 👋 I’m Aurora, your AI assistant. Ask me anything about this website!</p>
+                    </div>
+                    <div class="preview-message user">
+                        <span class="label">User</span>
+                        <p>Can you explain what this chatbot does?</p>
+                    </div>
+                    <div class="preview-message bot">
+                        <span class="label">Bot</span>
+                        <p>
+                            I greet visitors, answer FAQs, explain services, and capture leads — so your site feels alive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Features Section -->
+    <section id="features" class="section features-section">
+        <div class="section-header">
+            <h2>Why teams love Aurora</h2>
+            <p>Everything you need to turn a simple chatbot into a full product you can show and sell.</p>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <h3>Full-stack architecture</h3>
+                <p>Node.js + Express backend, OpenAI-powered brain, custom fallback engine, and secure APIs.</p>
+                <ul>
+                    <li>Modular chat engine</li>
+                    <li>Security middleware</li>
+                    <li>Production-style structure</li>
+                </ul>
+            </article>
+
+            <article class="feature-card">
+                <h3>Beautiful floating widget</h3>
+                <p>Modern glassmorphism chat window, theme toggle, quick suggestions and smooth animations.</p>
+                <ul>
+                    <li>Floating launcher</li>
+                    <li>Light & dark modes</li>
+                    <li>Responsive on all devices</li>
+                </ul>
+            </article>
+
+            <article class="feature-card">
+                <h3>Project-ready for interviews</h3>
+                <p>Designed to impress interviewers with real AI, clear code structure, and explainable logic.</p>
+                <ul>
+                    <li>Explainable architecture</li>
+                    <li>Clean code separation</li>
+                    <li>Easy future upgrades</li>
+                </ul>
+            </article>
+
+            <article class="feature-card">
+                <h3>Sellable as a service</h3>
+                <p>Position it as a plug-and-play chatbot for local businesses, portfolios, or college websites.</p>
+                <ul>
+                    <li>Reusable widget</li>
+                    <li>Multiple branding options</li>
+                    <li>Simple deployment flow</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="section usecases-section">
+        <div class="section-header">
+            <h2>Built once, sold to many.</h2>
+            <p>Customize Aurora’s content and sell it as a chatbot to different industries.</p>
+        </div>
+
+        <div class="usecase-grid">
+            <div class="usecase-card">
+                <h3>Portfolio / Personal brand</h3>
+                <p>Let recruiters chat with your “AI twin” that explains your skills, projects, and resume.</p>
+                <span class="pill">Developers</span>
+                <span class="pill">Students</span>
+            </div>
+            <div class="usecase-card">
+                <h3>College or coaching center</h3>
+                <p>Answer questions about courses, fees, admissions, timings, and contact details automatically.</p>
+                <span class="pill">Education</span>
+                <span class="pill">Admissions</span>
+            </div>
+            <div class="usecase-card">
+                <h3>Local businesses</h3>
+                <p>Help cafes, gyms, clinics, and salons give instant info on pricing, location, and bookings.</p>
+                <span class="pill">SMBs</span>
+                <span class="pill">Service</span>
+            </div>
+            <div class="usecase-card">
+                <h3>Freelance clients</h3>
+                <p>Offer a “chatbot setup package” as a service with installation, branding, and training.</p>
+                <span class="pill">Freelancers</span>
+                <span class="pill">Agencies</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="section demo-section">
+        <div class="section-header">
+            <h2>Try Aurora live</h2>
+            <p>Click the glowing chat button in the corner or use the quick prompts below.</p>
+        </div>
+
+        <div class="demo-layout">
+            <div class="demo-left">
+                <h3>Suggested prompts</h3>
+                <p>Click any of these or type your own question in the chat widget.</p>
+                <div class="prompt-list">
+                    <button class="prompt-chip" data-text="Explain how this chatbot project works.">
+            Explain the project
+          </button>
+                    <button class="prompt-chip" data-text="What technologies are used in this project?">
+            Tech stack
+          </button>
+                    <button class="prompt-chip" data-text="How can this chatbot help a small business?">
+            Business use case
+          </button>
+                    <button class="prompt-chip" data-text="Act as my interview coach for software engineering.">
+            Interview coach
+          </button>
+                    <button class="prompt-chip" data-text="Tell me a programming joke.">
+            Programming joke
+          </button>
+                </div>
+                <p class="demo-note">
+                    Aurora uses a combination of OpenAI and a local rule-based engine — so it’s both powerful and explainable.
+                </p>
+            </div>
+
+            <div class="demo-right">
+                <div class="demo-card">
+                    <h3>How it works under the hood</h3>
+                    <ol>
+                        <li>The frontend sends your question to <code>/api/chat</code>.</li>
+                        <li>The backend calls OpenAI’s model with a custom system prompt.</li>
+                        <li>If the API fails, it falls back to a local intent engine.</li>
+                        <li>The response is sent back and rendered as a chat bubble.</li>
+                    </ol>
+                    <p class="demo-footnote">
+                        All requests are validated, rate-limited, and logged for safety and debugging.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="section-header">
+            <h2>Frequently asked questions</h2>
+            <p>Perfect content to talk about in viva and interviews.</p>
+        </div>
+
+        <div class="faq-list">
+            <article class="faq-item">
+                <button class="faq-question">
+          <span>Is this a real full-stack project?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes. It has a Node.js + Express backend, a modern frontend, an AI engine using OpenAI, and a fallback rule-based engine. You can extend it with a database and auth.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+          <span>Can I customize it for different clients?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+                <div class="faq-answer">
+                    <p>
+                        Absolutely. Change the intents, tweak the system prompt, adjust branding, and deploy separate instances for each client website.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+          <span>What if the OpenAI API is down or limited?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+                <div class="faq-answer">
+                    <p>
+                        The backend falls back to your local intent engine (<code>chatEngine.js</code>), so the bot still responds to common questions without fully relying on the cloud.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-question">
+          <span>How is this useful for placements?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+                <div class="faq-answer">
+                    <p>
+                        You can present it as an AI-powered full-stack chatbot platform. It shows knowledge of APIs, backend, frontend, security, and product thinking.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="section contact-section">
+        <div class="contact-card">
+            <div class="contact-left">
+                <h2>Turn this into your signature project.</h2>
+                <p>
+                    Use Aurora AI in your resume, portfolio, and interviews. Show recruiters a live demo and walk them through the architecture.
+                </p>
+                <ul>
+                    <li>✅ Full-stack architecture explanation</li>
+                    <li>✅ Clean and modern UI</li>
+                    <li>✅ Ready to extend with DB & auth</li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <h3>Project summary snapshot</h3>
+                <div class="summary-row">
+                    <span>Role</span>
+                    <span>Full-stack developer</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tech</span>
+                    <span>Node.js · Express · JS · OpenAI</span>
+                </div>
+                <div class="summary-row">
+                    <span>Focus</span>
+                    <span>AI chatbot · Product thinking</span>
+                </div>
+                <p class="summary-note">
+                    You can also add a contact form here later to actually collect leads from visitors.
+                </p>
+                <button class="hero-primary" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">
+          Back to top ↑
+        </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span>© <span id="year"></span> Aurora AI Chatbot · Built as a portfolio / client-ready project.</span>
+    </footer>
+
+    <!-- Floating Chat Launcher -->
+    <button class="chat-launcher" id="chat-launcher" aria-label="Open chat">
+    <div class="chat-launcher-glow"></div>
+    <span class="chat-launcher-icon">💬</span>
+  </button>
+
+    <!-- Chatbot Window -->
+    <section class="chatbot-container" id="chatbot" aria-label="Chatbot">
+        <header class="chat-header">
+            <div class="chat-header-left">
+                <div class="bot-avatar">
+                    <span>🤖</span>
+                </div>
+                <div>
+                    <div class="chat-header-title">Aurora Bot</div>
+                    <div class="chat-header-status">
+                        <span class="status-dot"></span> Online · responds in seconds
+                    </div>
+                </div>
+            </div>
+            <div class="chat-header-right">
+                <button class="theme-toggle" id="theme-toggle" type="button">
+          <span class="theme-icon theme-icon-light">☀️</span>
+          <span class="theme-icon theme-icon-dark">🌙</span>
+        </button>
+                <button class="chat-close" id="chat-close" type="button" aria-label="Close chat">×</button>
+            </div>
+        </header>
+
+        <div class="chat-suggestions" id="chat-suggestions">
+            <button type="button" data-text="What is this Aurora AI chatbot project?">What is this project?</button>
+            <button type="button" data-text="Describe the tech stack used in this chatbot.">Tech stack?</button>
+            <button type="button" data-text="How can this chatbot help a business website?">Business help?</button>
+            <button type="button" data-text="Give me some tips for cracking a software job interview.">Interview tips</button>
+        </div>
+
+        <div class="chat-body" id="chat-body" aria-live="polite"></div>
+
+        <form class="chat-input-area" id="chat-form" autocomplete="off">
+            <button class="chat-input-action" type="button" id="clear-chat" title="Clear chat">
+        ⟳
+      </button>
+            <div class="chat-input-wrapper">
+                <input type="text" id="user-input" placeholder="Type your message..." maxlength="300" />
+            </div>
+            <button class="chat-send" type="submit">
+        <span>Send</span>
+        <span class="send-arrow">➤</span>
+      </button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
