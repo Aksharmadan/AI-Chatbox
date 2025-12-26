@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "ai-chatbox",
     "version": "1.0.0",
     "main": "server.js",
@@ -9,4 +10,22 @@
         "dotenv": "^16.4.5",
         "express": "^4.22.1"
     }
+=======
+  "name": "ai-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  }
+>>>>>>> 01a04fac1ee3ea46c01c91a02295a25e301be22a
 }

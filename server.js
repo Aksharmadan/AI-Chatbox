@@ -83,4 +83,8 @@ app.post("/api/chat", async(req, res) => {
 // Start server
 app.listen(PORT, () => {
     console.log(`✅ Chatbot server running at http://localhost:${PORT}`);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 01a04fac1ee3ea46c01c91a02295a25e301be22a
